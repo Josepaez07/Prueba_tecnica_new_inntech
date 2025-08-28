@@ -1,0 +1,35 @@
+{
+  "name": "new_inntech",
+  "version": "1.0.0",
+  "description": "prueba_tecnica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josepaez07/Prueba_tecnica_new_inntech.git"
+  },
+  "author": "Jose Paez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josepaez07/Prueba_tecnica_new_inntech/issues"
+  },
+  "homepage": "https://github.com/Josepaez07/Prueba_tecnica_new_inntech#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mongoose": "^8.18.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
