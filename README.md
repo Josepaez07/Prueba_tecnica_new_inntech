@@ -70,50 +70,26 @@ El frontend estará disponible en:
 
 ## 📌 Endpoints principales del API
 
-La API expone múltiples recursos: **autenticación, votantes, candidatos, votos y estadísticas**.  
+La API expone múltiples recursos: **votantes, candidatos, votos y estadísticas**.  
 
-### 🔑 Autenticación
-```bash
-curl -X POST http://localhost:9999/api/auth/login   -H "Content-Type: application/json"   -d '{"email": "admin@test.com", "password": "123456"}'
-```
+### Capturas de pantalla
 
-### 👥 Votantes
-```bash
-curl -X GET http://localhost:9999/api/voters   -H "Authorization: Bearer <token>"
-```
-
-### 🏛️ Candidatos
-```bash
-curl -X GET http://localhost:9999/api/candidates
-```
+### 👥 Ejemplos para Usuarios
+![Ejemplo de crear votante](./docs/capturas/crear-votante.png)
+![Ejemplo de crear candidato](./docs/capturas/crear-candidato.png)
+![Ejemplo de obtener usuarios](./docs/capturas/obtener-usuarios.png)
+![Ejemplo de obtener usuarios por id](./docs/capturas/obtener-usuario-id.png)
+![Ejemplo de eliminar usuario](./docs/capturas/eliminar-usuario.png)
 
 ### 🗳️ Votos
-```bash
-curl -X POST http://localhost:9999/api/votes   -H "Authorization: Bearer <token>"   -H "Content-Type: application/json"   -d '{"candidateId": "68b0a93de2f8b8ccb4b729ed"}'
-```
+![Ejemplo de crear voto](./docs/capturas/crear-voto.png)
+![Ejemplo de obtener votos](./docs/capturas/obtener-votos.png)
+![Ejemplo de obtener votos por id](./docs/capturas/obtener-votos-id.png)
+![Ejemplo de eliminar votos](./docs/capturas/eliminar-voto.png)
 
 ### 📊 Estadísticas
-```bash
-curl -X GET http://localhost:9999/api/stats
-```
-
-Ejemplo de respuesta:
-```json
-{
-  "total_voters": 10,
-  "total_votes": 7,
-  "total_candidates": 3,
-  "participation_rate": "70%",
-  "votes_per_candidate": [
-    {
-      "_id": "68b0a93de2f8b8ccb4b729ed",
-      "candidateName": "Jose candidate 1",
-      "candidateParty": "partido en la tarde",
-      "voteCount": 2
-    }
-  ]
-}
-```
+![Ejemplo de obtener estadisticas](./docs/capturas/obtener-estadisticas.png)
+![Ejemplo de estadisticas](./docs/capturas/vote-dashboard.png)
 
 ---
 
